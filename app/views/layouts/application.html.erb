@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  	<title>RS Pedalboards</title>
+  	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  	<%= csrf_meta_tags %>
+	<style type="text/css">
+   	
+   		
+	</style>
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+	
+	<!-- Font Awesome! -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+</head>
+<body>
+	<div class="infobar">
+		<div class="container marketing">
+			<div class="row move-text-down">
+    			<div class="col-md-6 text-left">
+    				<small><i class="fa fa-phone"></i> · (864)-915-4263&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> · at58474@yahoo.com</small>
+    			</div>
+    			<div class="col-md-6 text-right">
+    				<p>
+    					<a href="facebook.com"><i class="fa fa-facebook-square"></i></a>&nbsp;&nbsp;&nbsp;
+      					<a href="twitter.com"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+      					<a href="google.com"><i class="fa fa-google-plus"></i></a>&nbsp;&nbsp;&nbsp;
+      					<a href="linkedin.com"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;
+      					<a href="vimeo.com"><i class="fa fa-vimeo-square"></i></a>
+    				</p>
+    			</div>
+    		</div>
+		</div><!-- /.container -->
+	</div>
+    <nav role="navigation" class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Rising Standard Pedalboards</a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/home/index">Home</a></li>
+                <li><a href="/home/index#features">Features</a></li>
+                <li><a href="/home/index#aboutUs">About Us</a></li>
+                <li><a href="/pricing/index">Pricing</a></li>
+                <!--quick fix: added data-no-turbolink to solve js not loading-->
+                <li><a href="/contacts" data-no-turbolink>Contact</a></li>
+            </ul>
+            <form role="search" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Drafts</a></li>
+                        <li><a href="#">Sent Items</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Trash</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "headerWoodBackgroundDark.jpg" %>
+      <div class="container">
+        <div class="carousel-caption center-block">
+          <!--gay looking <%= image_tag "pedalBoardBanner3.png", :class => "carousel-caption-style-image"%>-->
+          <h1>Professional Products for the Everyday Musician</h1>
+          <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small="">
+          	<p></p>
+          	<p><a class="btn btn-lg btn-primary" href="#features">Learn More</a></p>
+          </pthis>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "headerWoodBackgroundMed.jpg" %>
+      <div class="container">
+        <div class="carousel-caption center-block">
+          <h1>Check Out Our Features</h1>
+          <p>Our highly customizable pedalboards include many useful features, but if there is something you need we can work with you to make it happen.</p>
+          <p><a class="btn btn-large btn-primary" href="#">View Our Features</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "headerWoodBackgroundLight.jpg" %>
+      <div class="container">
+        <div class="carousel-caption center-block">
+          <h1>Easily Organize Your Clutter</h1>
+          <p>Easy access to the organizational compartment allows you to hide all the mess.</p>
+          <p><a class="btn btn-large btn-primary" href="#">Get Yours Today!</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+<%= yield %>
+
+<p class="pull-right"><a class="goTop fa fa-arrow-circle-up fa-3x" href="#"></a></p>
+<br /><br />
+<!--Horizontal Bar for Upper Footer, bar stretches browser, text contained in marketing container-->
+<div class="footerBar">
+<br /><br />
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+	<div class="container marketing">
+		<div class="row">
+    		<div class="col-md-4 text-left">
+    			<h3 class="changeHeaderColor">About Us</h3>
+      			<p>Here at Rising Standard we like to make quality products that truly satisfy our customers. We are based out of Lexington, KY, and make everything in house. We believe in making the extraordinary, ordinary, and most of all affordable..</p>
+    		</div>
+    		<div class="col-md-4 text-center">
+      			<h3 class="changeHeaderColor">Latest News</h3>
+      			<a>Open For Business!</a>
+      			<p>December 11, 2014</p>
+    		</div>
+    		<div class="col-md-4 text-left">
+      			<h3 class="changeHeaderColor">Contact Info</h3>
+      			<p><i class="fa fa-bullseye"></i>&nbsp;&nbsp;&nbsp;260 Forest Hill Drive, Lexington, KY 40509, US</p>
+      			<p><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;(864)-915-4263</p>
+      			<p><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;at58474@yahoo.com</p>
+      			<br />
+      			<p>
+      				<a href="facebook.com"><i class="fa fa-facebook-square fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      				<a href="twitter.com"><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      				<a href="google.com"><i class="fa fa-google-plus fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      				<a href="linkedin.com"><i class="fa fa-linkedin fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      				<a href="vimeo.com"><i class="fa fa-vimeo-square fa-3x"></i></a>
+      			</p>
+    		</div>
+		</div><!-- /.row -->
+	</div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+	<br />
+	<div class="container marketing">
+		<div class="row">
+    		<div class="col-md-6 text-left">
+    			<p>&#169; 2014 All Rights Reserved · <a href="www.risingstandard.com" class="changeLinkColor">Rising Standard</a></p>
+    		</div>
+    		<div class="col-md-6 text-right">
+    			<p>
+    				<a href="#" class="changeLinkColor">Home</a>&nbsp;&nbsp;&nbsp;
+    				<a href="#features" class="changeLinkColor">Features</a>&nbsp;&nbsp;&nbsp;
+    				<a href="#aboutUs" class="changeLinkColor">About Us</a>&nbsp;&nbsp;&nbsp;
+    				<a href="#" class="changeLinkColor">Pricing</a>&nbsp;&nbsp;&nbsp;
+    				<a href="#" class="changeLinkColor">Contact</a>&nbsp;&nbsp;&nbsp;
+    			</p>
+    		</div>
+    	</div>
+	</div><!-- /.container -->
+</footer>
+
+</body>
+</html>
+
+

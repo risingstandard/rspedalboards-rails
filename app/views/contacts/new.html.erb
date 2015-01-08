@@ -1,0 +1,61 @@
+<div id="map-canvas"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(38.00409, -84.42154);
+  var mapOptions = {
+    zoom: 15,
+    center: myLatlng,
+    scrollwheel: false
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<div class="container marketing">
+<div class="row">
+    <div class="col-md-4">
+    	<h2>Get <span class="text-muted">Social</span></h2>
+    	<br />
+    	<p>
+      		<a href="facebook.com"><i class="fa fa-facebook-square fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      		<a href="twitter.com"><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      		<a href="google.com"><i class="fa fa-google-plus fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      		<a href="linkedin.com"><i class="fa fa-linkedin fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+      		<a href="vimeo.com"><i class="fa fa-vimeo-square fa-3x"></i></a>
+      	</p>
+      	<br />
+    	<h2>Contact <span class="text-muted">Info</span></h2>
+    	<br />
+    	<p><i class="fa fa-bullseye fa-3x"></i>&nbsp;&nbsp;&nbsp;260 Forest Hill Drive, Lexington, KY 40509, US</p>
+      	<p><i class="fa fa-phone fa-3x"></i></span>&nbsp;&nbsp;&nbsp;(864)-915-4263</p>
+      	<p><i class="fa fa-envelope fa-3x"></i></span>&nbsp;&nbsp;&nbsp;at58474@yahoo.com</p>
+    </div>
+    <div class="col-md-8">
+    	<h2>Get in Touch <span class="text-muted">With Us</span></h2>
+    	<br />
+    	<p>If you have any questions please feel free to contact us and we will get back to you as soon as we can. Also, use this form to inquire about pricing of a custom pedalboard. Please include the dimensions, type of wood, stain, inputs, power supply, and anything else you would like added to your custom pedalboard. If you would like specific dimensions or stain colors for our standatd pedalboards let us know.</p>
+		<br />
+  		<%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
+    	<%= f.input :name, :required => true, :input_html => { :class => 'contactFormInput form-control' } %>
+    	<%= f.input :email, :required => true, :input_html => { :class => 'contactFormInput form-control' } %>
+    	<%= f.input :message, :as => :text, :required => true, :input_html => { :class => 'contactFormInput form-control' } %>
+    	<div class= "hidden">
+      		<%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    	</div>
+    	<div>
+      	</br>
+      		<%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    	</div>
+  		<% end %>
+	</div>
+</div>
+</div>
