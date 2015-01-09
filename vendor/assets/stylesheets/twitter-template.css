@@ -16,26 +16,26 @@
     /*My CSS*/
    /*Override stupid navbar rounded corners*/
 	.navbar {
-		margin-top: 30px;
-		border-radius: 0 !important;
-  	  -moz-border-radius: 0 !important;
-  	  border: none !important;
+	 margin-top: 30px;
+	 border-radius: 0 !important;
+  	 -moz-border-radius: 0 !important;
+  	 border: none !important;
 	}
    	.statementBar {
-      background: #edf1f2;
-      height: 150px;
+     background: #edf1f2;
+     height: 150px;
    }
    p.statement {
-   	  font-size: 32px;
-   	  text-align: center;
-   	  margin-top: 50px;
+     font-size: 32px;
+   	 text-align: center;
+   	 margin-top: 50px;
    }
    .footerBar {
-   	  background: #111111;
-   	  height: 300px;
+   	 background: #111111;
+   	 height: 300px;
    }
    h3.changeHeaderColor{
-   	color: #cccccc;
+   	 color: #cccccc;
    }
    a.changeLinkColor{
    	color: #cccccc;
@@ -54,12 +54,12 @@
    }
    /*Remove the padding and margins, for images*/
    .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+     padding: 0 !important;
+     margin: 0 !important;
 	}
-	h1.featureHeader{
-	  text-align: center;	
-	}
+   h1.featureHeader{
+	 text-align: center;	
+   }
 	
 	/*Make To-Top Button accessible throughout the whole page*/
 	.goTop{
