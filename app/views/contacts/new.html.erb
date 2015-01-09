@@ -1,24 +1,8 @@
+<!--JavaScript for google maps header map, moved the actual script to googlemap.js in assets/javascripts and used the asset pipeline to include it here-->
+<!--The include tag had to be placed below the script to link to the google maps api-->
 <div id="map-canvas"></div>
-
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-function initialize() {
-  var myLatlng = new google.maps.LatLng(38.00409, -84.42154);
-  var mapOptions = {
-    zoom: 15,
-    center: myLatlng,
-    scrollwheel: false
-  }
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Hello World!'
-  });
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+<%= javascript_include_tag("googlemap") %>
 
 <div class="container marketing">
 <div class="row">

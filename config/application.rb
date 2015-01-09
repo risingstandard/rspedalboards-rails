@@ -6,6 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+#added this so application.yml would load which contains login info
 if Rails.env.development?
 
 ENV.update YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
